@@ -8,13 +8,20 @@ jobs:
       # hugo install
       - run: 
           command: 'go get -u -v github.com/spf13/hugo'
+      # submodule init
+      - run:
+          command: 'git submodule init && git submodule update'
       # hugo build
       - run:
-          command: 'pwd'
-      - run:
-          command: 'ls -la'
-      - run:
           command: 'hugo'
+      - run:
+          command: 'rm -rf docs/'
+      - run:
+          command: 'cp -r public docs'
+      - run:
+          command: 'git add -A && git commit -m "[AUTO]Hugo Built"'
+      - run:
+          command: 'git push origin master'
       - save_cache:
           key: cache-{{ epoch }}
           paths:
