@@ -33,6 +33,8 @@ jobs:
       - run:
           command: 'git config --global user.name "issy_s16"'
       - run:
+          command: 'git branch gh-pages && git checkout gh-pages"'
+      - run:
           command: 'git add -A && git commit -m "[AUTO]Hugo Built"'
       - run:
           command: 'git push origin gh-pages'
