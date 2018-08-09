@@ -14,6 +14,16 @@ jobs:
       # hugo build
       - run:
           command: 'hugo'
+      - save_cache:
+          key: cache-{{ epoch }}
+          paths:
+            - ~
+  deploy:
+    working_directory: ~
+    machine: true
+    steps:
+      - restore_cache:
+          key: cache
       - run:
           command: 'rm -rf docs/'
       - run:
@@ -25,20 +35,7 @@ jobs:
       - run:
           command: 'git add -A && git commit -m "[AUTO]Hugo Built"'
       - run:
-          command: 'git push origin master'
-      - save_cache:
-          key: cache-{{ epoch }}
-          paths:
-            - ~
-  deploy:
-    working_directory: ~
-    machine: true
-    steps:
-      - restore_cache:
-          key: cache
-      # run rsync
-      - run:
-          command: 'pwd'
+          command: 'git push origin gh-pages'
 workflows:
   version: 2
   build_and_test:
