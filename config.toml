@@ -1,13 +1,13 @@
-baseurl = "https://issy-s16.github.io/hugo-circleci-test/#main-menu"
+baseurl = "https://issy-s16.github.io/hugo-circleci-test/"
 theme = "cocoa-eh"
 builddrafts = true
 canonifyurls = true
 contentdir = "content"
-languageCode = "en-US"
+languageCode = "ja"
 layoutdir = "layouts"
 publishdir = "public"
-author = "Alexis Tacnet"
-title = "Cocoa Enhanced"
+author = "Shogo Ishikura"
+title = "もう8月ですね"
 disqusshortname = ""
 pluralizelisttitles = false
 
