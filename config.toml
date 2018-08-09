@@ -1,4 +1,4 @@
-baseURL = "http://www.example.com"
+baseURL = "https://issy-s16.github.io/hugo-circleci-test/"
 title = "Minimo"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
