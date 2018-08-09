@@ -12,6 +12,8 @@ jobs:
       - run:
           command: 'pwd'
       - run:
+          command: 'ls -la'
+      - run:
           command: 'hugo'
       - save_cache:
           key: cache-{{ epoch }}
