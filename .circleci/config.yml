@@ -1,0 +1,43 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~
+    machine: true
+    steps:
+      - checkout
+      # hugo install
+      - run: 
+          command: 'go get -u -v github.com/spf13/hugo'
+      # submodule init
+      - run:
+          command: 'git submodule init && git submodule update'
+      # hugo build
+      - run:
+          command: 'hugo'
+      - save_cache:
+          key: cache-{{ epoch }}
+          paths:
+            - ~
+  deploy:
+    working_directory: ~
+    machine: true
+    steps:
+      - restore_cache:
+          key: cache
+      # run rsync
+      - run:
+          command: 'pwd'
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
