@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Minimo</title>
-    <link>https://issy-s16.github.io/hugo-circleci-test/tags/</link>
-    <description>Recent content in Tags on Minimo</description>
+    <title>Tags on Cocoa Enhanced</title>
+    <link>https://issy-s16.github.io/hugo-circleci-test/#main-menu/tags/</link>
+    <description>Recent content in Tags on Cocoa Enhanced</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
     
-	<atom:link href="https://issy-s16.github.io/hugo-circleci-test/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://issy-s16.github.io/hugo-circleci-test/#main-menu/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
