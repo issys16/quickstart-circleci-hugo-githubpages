@@ -8,10 +8,9 @@ jobs:
       # hugo install
       - run: 
           command: 'go get -u -v github.com/spf13/hugo'
-      # submodule init
-      - run:
-          command: 'git submodule init && git submodule update'
       # hugo build
+      - run:
+          command: 'pwd'
       - run:
           command: 'hugo'
       - save_cache:
