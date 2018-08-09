@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://issy-s16.github.io/hugo-circleci-test/#main-menu/categories/</loc>
+    <loc>https://issy-s16.github.io/hugo-circleci-test/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://issy-s16.github.io/hugo-circleci-test/#main-menu/</loc>
+    <loc>https://issy-s16.github.io/hugo-circleci-test/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://issy-s16.github.io/hugo-circleci-test/#main-menu/tags/</loc>
+    <loc>https://issy-s16.github.io/hugo-circleci-test/</loc>
     <priority>0</priority>
   </url>
   
