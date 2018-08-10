@@ -13,11 +13,11 @@ Usage
 ============
 
 ### Step.1
-このリポジトリをフォークしてください。
+このリポジトリをフォークし、devブランチを`git clone`してください。
 
 ### Step.2
-フォークしたリポジトリにてGitHub Pagesのブランチ設定を行ってください。
-- master/docs配下を参照するように設定。
+フォークしたリポジトリにてGitHub Pagesのブランチ設定を行ってください。 
+※masterブランチのdocs配下を参照するように設定。
 
 ### Step.3
 CircleCI側でフォークしたリポジトリを監視するように設定してください。
@@ -47,19 +47,11 @@ https://themes.gohugo.io/ :
     $ cp themes/cocoa-eh-hugo-theme/exampleSite/config.toml .
 
 ### Step.7
-.circleci/config.ymlの初期設定(自分のgit情報に書き換えてください)
-
-・34行目: 
-
-    $ git config --global user.email "XXXXXXX"
-
-・36行目:
-
-    $ git config --global user.name "XXXXXXX"
-
-### Step.8
 リモートリポジトリのdevブランチにプッシュする: 
 
     $ git add -A
     $ git commit -m 'XXXXX'
     $ git push origin dev
+
+### Fin.
+以上の操作でCircleCIが実行され、GitHub Pagesに反映されます。

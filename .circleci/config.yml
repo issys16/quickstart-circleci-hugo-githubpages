@@ -29,9 +29,9 @@ jobs:
       - run:
           command: 'cp -r public docs'
       - run:
-          command: 'git config --global user.email "ishikura.shogo@gmail.com"'
+          command: 'git config --global user.email "push@circleci.com"'
       - run:
-          command: 'git config --global user.name "issy_s16"'
+          command: 'git config --global user.name "CircleCI"'
       - run:
           command: 'git add -A && git commit -m "[AUTO]Hugo Built"'
       - run:
