@@ -33,6 +33,8 @@ jobs:
       - run:
           command: 'git config --global user.name "CircleCI"'
       - run:
+          command: 'git branch master && git checkout master'
+      - run:
           command: 'git add -A && git commit -m "[AUTO]Hugo Built"'
       - run:
           command: 'git push -f origin master'
