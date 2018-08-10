@@ -5,7 +5,7 @@ quickstart-circleci-hugo
 CircleCI x Hugo x GitHub Pages の構成のブログを
 簡単に始められるようにテンプレート化したリポジトリです。
 
-devブランチへのプッシュを起因に、以下を実行します。
+devブランチへのプッシュをトリガーとして、以下を実行します。
 - HugoのBuild
 - Build済みソースをmasterブランチへプッシュ
 
