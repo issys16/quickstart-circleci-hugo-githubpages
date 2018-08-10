@@ -13,7 +13,7 @@ Usage
 ============
 
 ### Step.1
-このリポジトリをフォークし、devブランチを`git clone`してください。
+このリポジトリをフォークし、devブランチをデフォルトブランチとして指定してから`git clone`してください。
 
 ### Step.2
 フォークしたリポジトリにてGitHub Pagesのブランチ設定を行ってください。 
@@ -44,7 +44,7 @@ https://themes.gohugo.io/ :
 ### Step.6
 テーマに合わせてconfig.tomlを書き換える: 
 
-    $ cp themes/cocoa-eh-hugo-theme/exampleSite/config.toml .
+    $ cp themes/cocoa-eh/exampleSite/config.toml .
 
 ### Step.7
 リモートリポジトリのdevブランチにプッシュする: 
